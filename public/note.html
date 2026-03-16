@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Note</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <a href="/" class="link">&larr; All notes</a>
+      </header>
+
+      <main>
+        <section class="note-editor">
+          <input
+            id="note-title"
+            class="note-title-input"
+            type="text"
+            placeholder="Note title"
+          />
+          <textarea
+            id="note-content"
+            class="note-content-input"
+            rows="12"
+            placeholder="Write your note here..."
+          ></textarea>
+          <div class="note-actions">
+            <button id="save-btn" class="btn primary">Save</button>
+            <button id="delete-btn" class="btn danger">Delete</button>
+          </div>
+          <p id="note-meta" class="muted"></p>
+          <p id="status-message" class="status-message"></p>
+        </section>
+      </main>
+    </div>
+    <script src="/note.js"></script>
+  </body>
+  </html>
+

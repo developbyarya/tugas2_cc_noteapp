@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div>
+          <h1>Notes</h1>
+          <p id="last-updated" class="muted"></p>
+        </div>
+        <button id="new-note-btn" class="btn primary">New note</button>
+      </header>
+
+      <main>
+        <section id="notes-section">
+          <h2 class="section-title">Your notes</h2>
+          <div id="notes-list" class="notes-list"></div>
+          <p id="empty-state" class="muted hidden">No notes yet. Create your first one.</p>
+        </section>
+      </main>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+  </html>
+
